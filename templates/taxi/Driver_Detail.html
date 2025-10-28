@@ -3,11 +3,10 @@
 {% block content %}
 <h1>Driver Detail</h1>
 
-<h5>Cars:</h2>
+<h5>Cars:</h5>
   <ul>
     {% for car in driver_detail.cars.all %}
     <li>{{ car.model }}</li>
     {% endfor %}
   </ul>
   {% endblock %}
-  

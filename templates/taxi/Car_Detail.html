@@ -3,11 +3,11 @@
 {% block content %}
 <h1>Car Detail</h1>
 
-<h5>Name: {{ car_detail.manufacturer.name }}</h2>
-<h5>Country: {{ car_detail.manufacturer.country }}</h2>
+<h5>Name: {{ car_detail.manufacturer.name }}</h5>
+<h5>Country: {{ car_detail.manufacturer.country }}</h5>
 
 {% for driver in car_detail.drivers.all %}
-<h5>Drivers:</h2>
+<h5>Drivers:</h5>
 <ul>
   <li>{{ driver.license_number }}</li>
 </ul>
